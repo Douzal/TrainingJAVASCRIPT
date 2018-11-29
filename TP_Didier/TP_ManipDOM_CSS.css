@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'policePersoStar';
+	src: url('../fonts_persos/StarStrella/Star Strella.ttf'); 
+	/*src: url('policePerso/Star_Strella.ttf'); */
+	font-weight: bold;
+}
+
+h1 {
+	font-family: policePersoStar;
+	text-align: center;
+	font-size: 4em;
+}
+
+hr {
+	font-size: 1em;
+}
+
+ul {
+	font-family: "Comic Sans", "Comic Sans MS", verdana;
+}
+
+nav {
+	_float: left;
+	_width:150px;
+	_display: block;
+	margin-left: 20px;
+	_vertical-align: top;
+}
+
+/* nav > input { */
+nav :first-child {
+	opacity: 0.33;
+	margin-left: 8%;
+	_border: solid 1em;
+}
+
+section {
+	_float:right;
+	display: inline-block;
+	margin-top:20px;
+	margin-left: 20px;
+	vertical-align: top;
+	position: relative;
+}
+
+/* 
+body {
+	background-image: url(../fonts_persos/StarStrella/Star_Strella_3.png);
+	_background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+	background-color: yellow;
+	font-family: policePersoStar;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+h1 {
+	text-align: center;
+	color: aquamarine;
+	font-weight:bold;
+	font-family: policePersoStar;
+} */

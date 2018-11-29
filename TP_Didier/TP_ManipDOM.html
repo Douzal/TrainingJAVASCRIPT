@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TP Elements DOM</title>
+    <link type="text/css" href="TP_ManipDOM_CSS.css" rel="stylesheet"/>
+</head>
+<body onload="initComportementPage()">
+    <h1>= Une belle liste pleine de bontée =</h1>
+    <nav>
+        <input type="text" id="newContenu" value="amour à foison..." /><br />
+        <input value="Ajouter un élément" onclick="ManipulerElement(true)"/>
+        <input value="Retirer un élément" onclick="ManipulerElement(false)"/>
+    </nav>
+    <hr />
+    <section>
+        <ul id="idListe">
+            <li>de l'amour</li>
+            <li>de la joie</li>
+            <li>des blablous</li>
+            <li>des bisous</li>
+            <li>des copains</li>
+        </ul>
+    </section>
+</body>
+<script type="text/javascript" src="TP_ManipDOM_Js.js"></script>
+</html>
