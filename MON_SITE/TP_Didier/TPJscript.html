@@ -1,0 +1,70 @@
+<!DOCTYPE Html>
+<html>
+	<head>
+		<title>=TP JS=</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="cssTpDidier.css" type="text/css"/>
+	</head>
+	
+	<h1>Voici ma page Javascript pour TP avec Didier</h1>
+	
+	<form>
+		<div>
+			<input type="button"
+					value="click me !"
+					onclick="afficheVal()" />
+
+			<input style="text"
+					value="clic"
+					id="val" />
+
+			<hr />
+
+			<input style="text"
+					readonly="true"
+					value=""
+					id="boutRecup" />
+		</div>
+	</form>
+	<br />
+	<hr/>
+	<br />
+	<div>
+		Nom : <input type="text" id="nom" value="Master"/> (ex : Masson)<br />
+		prenom : <input type="text" id="prenom" value="Poker"/> (ex : Alexis)<br />
+		année : <input type="text" id="annee" value="2018"/> (ex : 2018)<br />
+		<br />
+		&nbsp;&nbsp;&nbsp;
+		<input type="button" value="VALIDATION"
+			onclick="verifForm();sendForm()"/>
+			<input type="button" value="montrer / cacher" onclick="showR()" />
+	</div>
+
+	<div id="formResultat">
+		<h2 style="font-family:verdana; color:blue">Résultats du form </h2>
+		<table style="border: 1px solid black;">
+			<tr>
+				<th  colspan=2>Valeurs recupérées</th>
+			</tr>
+			<tr>
+				<th>Nom : </th>
+				<th><span id="nom1">nom ?</span></th>
+			</tr>
+			<tr>
+				<th>Prenom : </th>
+				<th><span id="prenom1">prenom ?</span></th>
+			</tr>
+			<tr>
+				<th>Année : </th>
+				<th><span id="annee1">annee ?</span></th>
+			</tr>
+		</table>
+	</div>
+	
+	<ul>
+		<li>Lien vers la <a href="Mon_Site_p1.html">page 1</a>&nbsp;du site</li>
+		<li>Lien vers la <a href="Mon_Site_p2.html">page 2</a>&nbsp;du site</li>
+	</ul>
+	
+	<script src="TPScript.js"></script>
+</html>

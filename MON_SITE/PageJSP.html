@@ -1,0 +1,43 @@
+<!DOCTYPE = HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>--Page JSP--</title>
+        <link rel="stylesheet" href="aDefinir.css">
+    </head>
+
+    <body>
+        <h1 style="font-family:'Lucida Sans', 'Verdana'">Un titre stylisé.</h1>
+    <hr />
+        <script type="text/JAVASCRIPT">
+            console.log('Un GRAND message à l\'attention des developpeurs');
+        </script>
+
+        <form action="/tirage" method="post">
+            <%
+            for(int i = 1; i < 3; i++){
+                out.println("Numéro " + i + ": <select name=\"number"+i+"\">");
+                for(int j = 1; j <= 10; j++){
+                out.println("<option value=\""+j+"\">"+ j + "</option>");
+                }
+                out.println("</select><br />");
+            }
+            %>
+            <br />
+            <input type="submit" value="Valider" />
+        </form>
+
+        <hr />
+        <% out.println("Bip bip !"); %></br>
+        <%= "bio bip" %>
+
+        <%-- test de commentaire JSP --%>
+        <p>
+            Et ici un lien pour aller à la page 1 du site : <a href="Mon_Site_p1.html" target=_blank>clic</a>.
+        </p>
+
+        <!--  
+        <script type="text/javascript" src="javascript2aout18.js"></script>
+        <script type="text/javascript" src="jsNum5.js"></script> -->
+</body>
+</html>
